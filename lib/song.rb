@@ -41,7 +41,7 @@ class Song
           genre_count_hash[genre] += 1
         end
     end
-    
+
     return genre_count_hash
   end
 
@@ -55,8 +55,8 @@ class Song
           artist_count_hash[artist] += 1
         end
     end
-    
+
     return artist_count_hash
   end
-  
+
 end
