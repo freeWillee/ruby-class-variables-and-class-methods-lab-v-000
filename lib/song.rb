@@ -25,10 +25,10 @@ class Song
   def self.genres
     distinct_genre_list = []
     @@genres.each do |genre|
-      binding.pry
+      #binding.pry
       if @@genres.none?{|genre| genre}
         distinct_genre_list << genre
-        binding.pry
+      #  binding.pry
       end
     end
 
@@ -40,7 +40,7 @@ class Song
     distinct_artists_list = []
       if @@artists.none?{|artist| artist}
         distinct_artists_list << artist
-        binding.pry
+        #binding.pry
       end
 
     return distinct_artists_list
