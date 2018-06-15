@@ -41,6 +41,7 @@ class Song
       else
         genre_count_hash[genre] = 1
       end
+      binding.pry
     end
 
     return genre_count_hash
