@@ -37,8 +37,10 @@ class Song
     @@genres.each do |genre|
       if genre_count_hash.any?{|key, value| key == genre}
         genre_count_hash[key] = value + 1
+      else
+        genre_count_hash[genre] = 1
       end
-    end        
+    end
 
     return genre_count_hash
   end
