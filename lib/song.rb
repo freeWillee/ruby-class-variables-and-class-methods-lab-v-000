@@ -39,9 +39,11 @@ class Song
   def self.artists
     distinct_artists_list = []
       binding.pry
-      if @@artists.none?{|artist| artist}
-        distinct_artists_list << artist
-        binding.pry
+      @@artists.each do |unqiue_artist|
+        if @@artists.none?{|artist| artist == unique_artist}
+          distinct_artists_list << artist
+          binding.pry
+        end
       end
 
     return distinct_artists_list
