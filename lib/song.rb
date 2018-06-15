@@ -36,11 +36,11 @@ class Song
 
     @@genres.each do |genre|
       binding.pry
-      if genre_count_hash.any?{|key, value| key == genre}
-        genre_count_hash[key] = value + 1
-      else
+      # if genre_count_hash.any?{|key, value| key == genre}
+      #   genre_count_hash[key] = value + 1
+      # else
         genre_count_hash[genre] = 1
-      end
+      # end
       binding.pry
     end
 
