@@ -45,7 +45,7 @@ class Song
           binding.pry
         end
       end
-
+    binding.pry
     return distinct_artists_list
   end
 
