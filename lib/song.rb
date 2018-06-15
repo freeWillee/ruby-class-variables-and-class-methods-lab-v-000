@@ -40,7 +40,7 @@ class Song
     distinct_artists_list = []
       if @@artists.none?{|artist| artist}
         distinct_artists_list << artist
-        #binding.pry
+        binding.pry
       end
 
     return distinct_artists_list
