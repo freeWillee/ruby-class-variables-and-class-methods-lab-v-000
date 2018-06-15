@@ -38,9 +38,9 @@ class Song
       if genre_count_hash.any?{|key, value| key == genre}
         genre_count_hash[key] = value + 1
       end
-              
-    
+    end        
+
     return genre_count_hash
   end
-  
+
 end
