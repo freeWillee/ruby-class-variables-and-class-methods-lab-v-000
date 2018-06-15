@@ -26,9 +26,6 @@ class Song
     @@genres.uniq
   end
 
-    return distinct_genre_list
-  end
-
   #returns the number of distinct genres in class
   def self.artists
     @@artists.uniq
