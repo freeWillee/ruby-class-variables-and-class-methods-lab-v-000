@@ -37,16 +37,7 @@ class Song
 
   #returns the number of distinct genres in class
   def self.artists
-    distinct_artists_list = []
-      #binding.pry
-      @@artists.each do |unique_artist|
-        if @@artists.none?{|artist| artist == unique_artist}
-          distinct_artists_list << artist
-          binding.pry
-        end
-      end
-    binding.pry
-    return distinct_artists_list
+    @@artists.uniq
   end
 
   def self.genre_count
